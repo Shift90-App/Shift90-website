@@ -1338,6 +1338,40 @@ DO NOT GO LIVE UNTIL:
   }
   .faq__item.is-open .faq__a { max-height: 400px; padding-bottom: 24px; }
   .faq__a p { color: var(--muted); font-size: 16px; line-height: 1.7; }
+
+  .program-card__price {
+    margin: 24px 0 20px;
+    text-align: center;
+  }
+  .program-card__price-main {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 48px;
+    color: var(--accent);
+    margin: 0;
+    line-height: 1;
+  }
+  .program-card__price-main span {
+    font-size: 20px;
+    color: var(--muted);
+    font-family: 'DM Sans', sans-serif;
+  }
+  .program-card__price-was {
+    font-size: 14px;
+    color: var(--muted);
+    margin: 6px 0 0;
+    text-decoration: none;
+  }
+  .program-card__price-was s {
+    text-decoration: line-through;
+  }
+  .program-card__price-note {
+    font-size: 12px;
+    color: var(--accent);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin: 4px 0 0;
+  }
 </style>
 </head>
 <body>
@@ -1489,9 +1523,10 @@ DO NOT GO LIVE UNTIL:
     <div class="founder__text">
       <p class="label">Why Shift90 Exists</p>
       <h2>HI, I'M JIM. I'VE LIVED EVERY SHIFT.</h2>
-      <p>See the guy on the left? That's me, 90 days ago. Same job. Same roster. Completely different result.</p>
-      <p>No routine. Energy drinks. Servo dinners. Running on 4 hours of sleep before a shift. Life sucked.</p>
-      <p>8 years in open-cut mining taught me one thing: most programs aren't built for shift workers. Wrong sleep hours. No structure. Eating whatever's easy at 2am. Running on caffeine just to get through.</p>
+      <p>Same job. Same roster. Completely different result.</p>
+      <p>Before: no routine, energy drinks, convenience food, and running on 4 hours of sleep before a shift.</p>
+      <p>After: eating properly around shift work, training around my roster, sleeping better before and after work — and actually feeling human again on my days off.</p>
+      <p>8 years in open-cut mining taught me one thing — most programs aren't built for shift workers. Wrong sleep hours. No structure. Eating whatever's easy at 2am. Running on caffeine just to get through.</p>
       <p>I tried the generic programs. They don't work on a rotating roster.</p>
       <p>So I built something that does. Shift90 is the system I wish I had earlier.</p>
       <p class="founder__disclaimer">Results will vary, but this shows what's possible when you dial everything in.</p>
@@ -1764,6 +1799,11 @@ DO NOT GO LIVE UNTIL:
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Ongoing education &amp; resources</span></li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Exclusive member pricing on Night Work Nutrition products</span></li>
         </ul>
+        <div class="program-card__price">
+          <p class="program-card__price-main">$289 <span>AUD</span></p>
+          <p class="program-card__price-was">Founding member price — normally $349</p>
+          <p class="program-card__price-note">First 20 members only</p>
+        </div>
         <a href="https://www.skool.com/shift90-6712/about" class="btn btn--primary btn--block" target="_blank" rel="noopener">Join Foundation →</a>
       </div>
 
@@ -1771,6 +1811,7 @@ DO NOT GO LIVE UNTIL:
       <div class="program-card program-card--featured fade-up fade-up--delay-1">
         <span class="program-card__badge">Specialist Support</span>
         <h3>ACCELERATE</h3>
+        <p class="program-card__price-note" style="text-align:left; margin-bottom:16px;">Application based — pricing discussed on call</p>
         <p class="program-card__desc">Built for shift workers who want faster, more structured results.</p>
         <p class="program-card__note">Cohort-based. Includes 1-on-1 specialist support. Application required.</p>
         <ul class="program-card__list">
@@ -1797,6 +1838,7 @@ DO NOT GO LIVE UNTIL:
       <div class="program-card fade-up fade-up--delay-2">
         <span class="program-card__badge">Full Support</span>
         <h3>TRANSFORM</h3>
+        <p class="program-card__price-note" style="text-align:left; margin-bottom:16px;">Application based — pricing discussed on call</p>
         <p class="program-card__desc">Full support. Faster results. No guesswork.</p>
         <p class="program-card__note">Limited spots per intake. Application required.</p>
         <ul class="program-card__list">
@@ -1931,7 +1973,7 @@ DO NOT GO LIVE UNTIL:
       <h2>READY TO TRANSFORM YOUR LIFESTYLE?</h2>
       <p>If you're a shift worker who's sick of feeling constantly tired, out of routine, and relying on caffeine just to get through — this is exactly what Shift90 is built for.</p>
       <p>You don't need more discipline. You need a system that actually works around your roster.</p>
-      <p>Only apply if you're serious about fixing it.</p>
+      <p>Only apply if you're serious about changing it.</p>
       <a href="#programs" class="btn btn--primary btn--lg">Start Shift90 →</a>
       <p class="final-cta__note">Want personalised support? Apply for Accelerate or Transform.<br>Intake-based. Limited spots available. Applications reviewed weekly.</p>
     </div>
@@ -2006,7 +2048,7 @@ DO NOT GO LIVE UNTIL:
     <div class="footer__top">
       <div>
         <p class="footer__logo">SHIFT<span class="logo-accent">90</span></p>
-        <p class="footer__tagline">Fix your sleep. Get your energy back. Take control of your life again.</p>
+        <p class="footer__tagline">Rebuild your sleep. Get your energy back. Take control of your life again.</p>
       </div>
       <nav class="footer__nav" aria-label="Footer">
         <a href="#programs">Programs</a>
