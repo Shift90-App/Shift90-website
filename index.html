@@ -1341,28 +1341,45 @@ DO NOT GO LIVE UNTIL:
 
   .program-card__price {
     margin: 24px 0 20px;
-    text-align: center;
+  }
+  .program-card__price-row {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .program-card__price-was {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    color: var(--muted);
+    text-decoration: line-through;
+    opacity: 0.6;
   }
   .program-card__price-main {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 48px;
+    font-size: 52px;
     color: var(--accent);
-    margin: 0;
     line-height: 1;
   }
-  .program-card__price-main span {
-    font-size: 20px;
-    color: var(--muted);
+  .program-card__price-currency {
     font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    color: var(--muted);
+    font-weight: 400;
   }
-  .program-card__price-was {
+  .program-card__price-founding {
+    font-size: 13px;
+    color: var(--accent);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin: 8px 0 0;
+  }
+  .program-card__price-weekly {
     font-size: 14px;
     color: var(--muted);
+    line-height: 1.5;
     margin: 6px 0 0;
-    text-decoration: none;
-  }
-  .program-card__price-was s {
-    text-decoration: line-through;
   }
   .program-card__price-note {
     font-size: 12px;
@@ -1800,9 +1817,12 @@ DO NOT GO LIVE UNTIL:
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Exclusive member pricing on Night Work Nutrition products</span></li>
         </ul>
         <div class="program-card__price">
-          <p class="program-card__price-main">$289 <span>AUD</span></p>
-          <p class="program-card__price-was">Founding member price — normally $349</p>
-          <p class="program-card__price-note">First 20 members only</p>
+          <div class="program-card__price-row">
+            <span class="program-card__price-was">$349 AUD</span>
+            <span class="program-card__price-main">$289 <span class="program-card__price-currency">AUD</span></span>
+          </div>
+          <p class="program-card__price-founding">Founding member price — first 20 members only.</p>
+          <p class="program-card__price-weekly">Around $22/week over 90 days to build a routine that actually works around shift work.</p>
         </div>
         <a href="https://www.skool.com/shift90-6712/about" class="btn btn--primary btn--block" target="_blank" rel="noopener">Join Foundation →</a>
       </div>
@@ -1811,7 +1831,7 @@ DO NOT GO LIVE UNTIL:
       <div class="program-card program-card--featured fade-up fade-up--delay-1">
         <span class="program-card__badge">Specialist Support</span>
         <h3>ACCELERATE</h3>
-        <p class="program-card__price-note" style="text-align:left; margin-bottom:16px;">Application based — pricing discussed on call</p>
+        <p class="program-card__price-note" style="text-align:left; margin-bottom:16px;">Application based — pricing provided after enquiry</p>
         <p class="program-card__desc">Built for shift workers who want faster, more structured results.</p>
         <p class="program-card__note">Cohort-based. Includes 1-on-1 specialist support. Application required.</p>
         <ul class="program-card__list">
@@ -1838,7 +1858,7 @@ DO NOT GO LIVE UNTIL:
       <div class="program-card fade-up fade-up--delay-2">
         <span class="program-card__badge">Full Support</span>
         <h3>TRANSFORM</h3>
-        <p class="program-card__price-note" style="text-align:left; margin-bottom:16px;">Application based — pricing discussed on call</p>
+        <p class="program-card__price-note" style="text-align:left; margin-bottom:16px;">Application based — pricing provided after enquiry</p>
         <p class="program-card__desc">Full support. Faster results. No guesswork.</p>
         <p class="program-card__note">Limited spots per intake. Application required.</p>
         <ul class="program-card__list">
