@@ -608,8 +608,18 @@ DO NOT GO LIVE UNTIL:
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center top;
+    object-position: center;
     border-radius: inherit;
+  }
+  /* Clean founder image — no frame, background, stripe, border or shadow */
+  .founder__image .placeholder {
+    background: transparent;
+    border: none;
+    padding: 0;
+    box-shadow: none;
+  }
+  .founder__image .placeholder::before {
+    display: none;
   }
 
   .phone {
@@ -1388,6 +1398,12 @@ DO NOT GO LIVE UNTIL:
     text-transform: uppercase;
     letter-spacing: 0.06em;
     margin: 4px 0 0;
+  }
+
+  /* Mobile: image above text in the founder section */
+  @media (max-width: 767px) {
+    .founder__image { order: 1; }
+    .founder__text { order: 2; }
   }
 </style>
 </head>
